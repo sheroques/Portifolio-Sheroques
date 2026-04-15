@@ -1,11 +1,20 @@
+Repositório do meu portfólio pessoal, desenvolvido para apresentar meus projetos, habilidades e evolução como desenvolvedor.
 
-  # Untitled
+Sobre o projeto
 
-  This is a code bundle for Untitled. The original project is available at https://www.figma.com/design/hvqmxDPWIaAJ9FIJyalLIR/Untitled.
+Este portfólio foi criado com foco em performance, organização e experiência do usuário. A aplicação reúne meus principais projetos e demonstra, na prática, minhas competências em desenvolvimento full stack.
 
-  ## Running the code
+Tecnologias
 
-  Run `npm i` to install the dependencies.
+React
+Tailwind CSS
+Node.js
+JavaScript
+Git e GitHub
 
-  Run `npm run dev` to start the development server.
-  
+Funcionalidades
+
+Exibição de projetos com descrição e links
+Interface responsiva para diferentes dispositivos
+Navegação simples e intuitiva
+Integração com backend (Node.js)
