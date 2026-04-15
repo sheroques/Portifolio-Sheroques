@@ -1,17 +1,20 @@
 const skillCategories = [
   {
     category: 'Frontend',
-    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS'],
+    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Vue.js', 'GSAP'],
   },
   {
     category: 'Backend',
-    skills: ['Node.js', 'Python', 'Java', 'REST APIs'],
+    skills: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB', 'GraphQL', 'REST APIs'],
   },
   {
     category: 'Mobile',
-    skills: ['React Native', 'Flutter', 'Expo', 'Firebase'],
+    skills: ['React Native', 'Flutter', 'Swift', 'Kotlin', 'Expo', 'Firebase'],
   },
- 
+  {
+    category: 'Design',
+    skills: ['Figma', 'Adobe XD', 'Photoshop', 'Illustrator', 'Prototyping', 'UI/UX'],
+  },
 ];
 
 export function Skills() {

@@ -21,24 +21,6 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Social Media App',
-    category: 'Mobile',
-    description: 'Aplicativo mobile para rede social com funcionalidades de chat e stories.',
-    year: '2024',
-    color: 'blue',
-    status: 'completed',
-  },
-  {
-    id: 4,
-    title: 'Portfolio CMS',
-    category: 'Full Stack',
-    description: 'Sistema de gerenciamento de conteúdo personalizado para portfólios.',
-    year: '2024',
-    color: 'light',
-    status: 'in-progress',
-  },
-  {
-    id: 5,
     title: 'AI Image Generator',
     category: 'Frontend',
     description: 'Interface para geração de imagens com inteligência artificial.',
@@ -47,10 +29,10 @@ const projects = [
     status: 'in-progress',
   },
   {
-    id: 6,
-    title: 'Fitness Tracker',
+    id: 4,
+    title: 'Social Media App',
     category: 'Mobile',
-    description: 'App de acompanhamento de treinos e metas fitness com gamificação.',
+    description: 'Aplicativo mobile para rede social com funcionalidades de chat e stories.',
     year: '2024',
     color: 'light',
     status: 'completed',
@@ -131,15 +113,12 @@ export function Projects() {
                 <div className="py-8 md:py-12 grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-center cursor-pointer">
                   {/* Number */}
                   <div className="md:col-span-1">
-                    <span
-                      className="text-4xl md:text-5xl transition-colors duration-500"
+                    <div
+                      className="w-4 h-4 md:w-5 md:h-5 rounded-full transition-colors duration-500"
                       style={{
-                        fontFamily: 'var(--font-display)',
-                        color: colors.number,
+                        backgroundColor: colors.number,
                       }}
-                    >
-                      {String(index + 1).padStart(2, '0')}
-                    </span>
+                    ></div>
                   </div>
 
                   {/* Title */}

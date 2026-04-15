@@ -1,3 +1,5 @@
+import { ImageWithFallback } from './figma/ImageWithFallback';
+
 export function About() {
   return (
     <section className="min-h-screen bg-background py-20 md:py-32 px-6 md:px-12" id="sobre">
@@ -17,72 +19,37 @@ export function About() {
           </div>
 
           {/* Right column - Content */}
-          <div className="md:col-span-9 space-y-12">
-            <div>
-              <h2
-                className="text-[clamp(2.5rem,6vw,5rem)] leading-[1.1] mb-8 text-foreground"
-                style={{ fontFamily: 'var(--font-display)' }}
-              >
-                DESENVOLVEDOR FULL STACK
-              </h2>
-              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-                Sou apaixonado por criar produtos digitais que não apenas funcionam perfeitamente, mas também proporcionam experiências memoráveis aos usuários.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8">
-              <div className="border-l-4 border-accent-blue pl-6">
-                <h3 className="text-2xl font-semibold mb-4 text-foreground">Experiência</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  +5 anos desenvolvendo soluções web e mobile para startups e empresas de tecnologia, com foco em interfaces modernas e performance.
+          <div className="md:col-span-9">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* Text content */}
+              <div className="space-y-6">
+                <h2
+                  className="text-[clamp(2.5rem,6vw,4rem)] leading-[1.1] text-foreground"
+                  style={{ fontFamily: 'var(--font-display)' }}
+                >
+                  DESIGNER & DESENVOLVEDOR FULL STACK
+                </h2>
+                <p className="text-xl text-muted-foreground leading-relaxed">
+                  Sou apaixonado por criar produtos digitais que não apenas funcionam perfeitamente, mas também proporcionam experiências memoráveis aos usuários.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Com expertise em design e desenvolvimento, trabalho na interseção entre estética e funcionalidade, criando soluções que fazem a diferença.
                 </p>
               </div>
 
-              <div className="border-l-4 border-primary-blue pl-6">
-                <h3 className="text-2xl font-semibold mb-4 text-foreground">Abordagem</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  Acredito em design centrado no usuário, código limpo e escalável, e na importância de entender o problema antes de propor soluções.
-                </p>
-              </div>
-            </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12 border-t-2 border-border">
-              <div>
-                <p
-                  className="text-5xl md:text-6xl text-foreground"
-                  style={{ fontFamily: 'var(--font-display)' }}
-                >
-                  50+
-                </p>
-                <p className="text-sm uppercase tracking-wide text-muted-foreground mt-2">Projetos</p>
-              </div>
-              <div>
-                <p
-                  className="text-5xl md:text-6xl text-foreground"
-                  style={{ fontFamily: 'var(--font-display)' }}
-                >
-                  5+
-                </p>
-                <p className="text-sm uppercase tracking-wide text-muted-foreground mt-2">Anos</p>
-              </div>
-              <div>
-                <p
-                  className="text-5xl md:text-6xl text-foreground"
-                  style={{ fontFamily: 'var(--font-display)' }}
-                >
-                  30+
-                </p>
-                <p className="text-sm uppercase tracking-wide text-muted-foreground mt-2">Clientes</p>
-              </div>
-              <div>
-                <p
-                  className="text-5xl md:text-6xl text-foreground"
-                  style={{ fontFamily: 'var(--font-display)' }}
-                >
-                  100%
-                </p>
-                <p className="text-sm uppercase tracking-wide text-muted-foreground mt-2">Satisfação</p>
+              {/* Profile image */}
+              <div className="flex justify-center lg:justify-end">
+                <div className="relative">
+                  <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-accent-blue shadow-2xl">
+                    <ImageWithFallback
+                      src="https://images.unsplash.com/photo-1737575655055-e3967cbefd03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzYyMDc3MDB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                      alt="Luiz Alexandre - Developer"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  {/* Decorative element */}
+                  <div className="absolute -bottom-4 -right-4 w-32 h-32 border-4 border-primary-blue -z-10"></div>
+                </div>
               </div>
             </div>
           </div>

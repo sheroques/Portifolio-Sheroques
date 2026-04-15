@@ -26,7 +26,7 @@ export function Contact() {
     <section className="min-h-screen bg-background py-20 md:py-32 px-6 md:px-12" id="contato">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-20">
           <div className="md:col-span-3">
             <p
               className="text-[clamp(4rem,8vw,8rem)] leading-none text-accent-blue"
@@ -49,131 +49,84 @@ export function Contact() {
           </div>
         </div>
 
-        {/* Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-          {/* Contact Info */}
-          <div className="space-y-12">
+        {/* Contact Form */}
+        <div className="max-w-2xl mx-auto mt-16">
+          <form onSubmit={handleSubmit} className="space-y-8">
             <div>
-              <h3 className="text-muted-foreground uppercase tracking-wider text-sm mb-4">Email</h3>
-              <a
-                href="mailto:luiz@exemplo.com"
-                className="text-2xl md:text-3xl text-foreground hover:text-accent-blue transition-colors duration-300"
+              <label
+                htmlFor="name"
+                className={`block text-sm uppercase tracking-wider mb-3 transition-colors duration-300 ${
+                  focusedField === 'name' ? 'text-accent-blue' : 'text-muted-foreground'
+                }`}
               >
-                luiz@exemplo.com
-              </a>
+                Seu Nome
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                onFocus={() => setFocusedField('name')}
+                onBlur={() => setFocusedField(null)}
+                className="w-full bg-transparent border-b-2 border-border text-foreground text-xl py-3 outline-none focus:border-accent-blue transition-colors duration-300"
+                required
+              />
             </div>
 
             <div>
-              <h3 className="text-muted-foreground uppercase tracking-wider text-sm mb-4">Telefone</h3>
-              <a
-                href="tel:+5511999999999"
-                className="text-2xl md:text-3xl text-foreground hover:text-accent-blue transition-colors duration-300"
+              <label
+                htmlFor="email"
+                className={`block text-sm uppercase tracking-wider mb-3 transition-colors duration-300 ${
+                  focusedField === 'email' ? 'text-accent-blue' : 'text-muted-foreground'
+                }`}
               >
-                +55 11 99999-9999
-              </a>
+                Seu Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                onFocus={() => setFocusedField('email')}
+                onBlur={() => setFocusedField(null)}
+                className="w-full bg-transparent border-b-2 border-border text-foreground text-xl py-3 outline-none focus:border-accent-blue transition-colors duration-300"
+                required
+              />
             </div>
 
             <div>
-              <h3 className="text-muted-foreground uppercase tracking-wider text-sm mb-6">Redes Sociais</h3>
-              <div className="space-y-3">
-                {['LinkedIn', 'GitHub', 'Dribbble', 'Twitter'].map((social) => (
-                  <a
-                    key={social}
-                    href="#"
-                    className="block text-xl text-foreground hover:text-accent-blue hover:translate-x-2 transition-all duration-300"
-                  >
-                    → {social}
-                  </a>
-                ))}
-              </div>
+              <label
+                htmlFor="message"
+                className={`block text-sm uppercase tracking-wider mb-3 transition-colors duration-300 ${
+                  focusedField === 'message' ? 'text-accent-blue' : 'text-muted-foreground'
+                }`}
+              >
+                Sua Mensagem
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                onFocus={() => setFocusedField('message')}
+                onBlur={() => setFocusedField(null)}
+                rows={5}
+                className="w-full bg-transparent border-b-2 border-border text-foreground text-xl py-3 outline-none focus:border-accent-blue transition-colors duration-300 resize-none"
+                required
+              />
             </div>
 
-            <div className="pt-8">
-              <p className="text-muted-foreground text-sm">
-                Baseado em São Paulo, Brasil
-                <br />
-                Disponível para projetos remotos e presenciais
-              </p>
-            </div>
-          </div>
-
-          {/* Contact Form */}
-          <div>
-            <form onSubmit={handleSubmit} className="space-y-8">
-              <div>
-                <label
-                  htmlFor="name"
-                  className={`block text-sm uppercase tracking-wider mb-3 transition-colors duration-300 ${
-                    focusedField === 'name' ? 'text-accent-blue' : 'text-muted-foreground'
-                  }`}
-                >
-                  Seu Nome
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  onFocus={() => setFocusedField('name')}
-                  onBlur={() => setFocusedField(null)}
-                  className="w-full bg-transparent border-b-2 border-border text-foreground text-xl py-3 outline-none focus:border-accent-blue transition-colors duration-300"
-                  required
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="email"
-                  className={`block text-sm uppercase tracking-wider mb-3 transition-colors duration-300 ${
-                    focusedField === 'email' ? 'text-accent-blue' : 'text-muted-foreground'
-                  }`}
-                >
-                  Seu Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  onFocus={() => setFocusedField('email')}
-                  onBlur={() => setFocusedField(null)}
-                  className="w-full bg-transparent border-b-2 border-border text-foreground text-xl py-3 outline-none focus:border-accent-blue transition-colors duration-300"
-                  required
-                />
-              </div>
-
-              <div>
-                <label
-                  htmlFor="message"
-                  className={`block text-sm uppercase tracking-wider mb-3 transition-colors duration-300 ${
-                    focusedField === 'message' ? 'text-accent-blue' : 'text-muted-foreground'
-                  }`}
-                >
-                  Sua Mensagem
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  onFocus={() => setFocusedField('message')}
-                  onBlur={() => setFocusedField(null)}
-                  rows={5}
-                  className="w-full bg-transparent border-b-2 border-border text-foreground text-xl py-3 outline-none focus:border-accent-blue transition-colors duration-300 resize-none"
-                  required
-                />
-              </div>
-
+            <div className="text-center pt-4">
               <button
                 type="submit"
-                className="w-full md:w-auto px-12 py-5 bg-accent-blue text-white font-medium uppercase tracking-wider hover:bg-primary-blue transition-colors duration-300"
+                className="px-12 py-5 bg-accent-blue text-white font-medium uppercase tracking-wider hover:bg-primary-blue transition-colors duration-300"
               >
                 Enviar Mensagem
               </button>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </div>
     </section>
