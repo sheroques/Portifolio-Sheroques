@@ -1,3 +1,4 @@
+
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function About() {
@@ -27,13 +28,13 @@ export function About() {
                   className="text-[clamp(2.5rem,6vw,4rem)] leading-[1.1] text-foreground"
                   style={{ fontFamily: 'var(--font-display)' }}
                 >
-                  DESIGNER & DESENVOLVEDOR FULL STACK
+                DESENVOLVEDOR FULL STACK
                 </h2>
                 <p className="text-xl text-muted-foreground leading-relaxed">
                   Sou apaixonado por criar produtos digitais que não apenas funcionam perfeitamente, mas também proporcionam experiências memoráveis aos usuários.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Com expertise em design e desenvolvimento, trabalho na interseção entre estética e funcionalidade, criando soluções que fazem a diferença.
+                  Com expertise em desenvolvimento, trabalho na interseção entre estética e funcionalidade, criando soluções que fazem a diferença.
                 </p>
               </div>
 
@@ -42,7 +43,7 @@ export function About() {
                 <div className="relative">
                   <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-accent-blue shadow-2xl">
                     <ImageWithFallback
-                      src="https://images.unsplash.com/photo-1737575655055-e3967cbefd03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzYyMDc3MDB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                      src="https://avatars.githubusercontent.com/u/114538629?v=4"
                       alt="Luiz Alexandre - Developer"
                       className="w-full h-full object-cover"
                     />
