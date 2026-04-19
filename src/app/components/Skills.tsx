@@ -10,6 +10,7 @@ const skillCategories = [
   {
     category: 'Mobile',
     skills: ['React Native', 'Flutter', 'Expo', 'Firebase'],
+    
   },
 ];
 
