@@ -1,19 +1,15 @@
 const skillCategories = [
   {
     category: 'Frontend',
-    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Vue.js', 'GSAP'],
+    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS'],
   },
   {
     category: 'Backend',
-    skills: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB', 'GraphQL', 'REST APIs'],
+    skills: ['Node.js', 'Python', 'REST APIs'],
   },
   {
     category: 'Mobile',
-    skills: ['React Native', 'Flutter', 'Swift', 'Kotlin', 'Expo', 'Firebase'],
-  },
-  {
-    category: 'Design',
-    skills: ['Figma', 'Adobe XD', 'Photoshop', 'Illustrator', 'Prototyping', 'UI/UX'],
+    skills: ['React Native', 'Flutter', 'Expo', 'Firebase'],
   },
 ];
 
