@@ -32,7 +32,7 @@ export function About() {
                 </h2>
                 <p className="text-xl text-muted-foreground leading-relaxed">
                   Sou apaixonado por criar produtos digitais que não apenas funcionam perfeitamente, mas também proporcionam experiências memoráveis aos usuários.
-                </p>git 
+                </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   Com expertise em desenvolvimento, trabalho na interseção entre estética e funcionalidade, criando soluções que fazem a diferença.
                 </p>
