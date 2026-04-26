@@ -1,5 +1,6 @@
 
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import imagemTeste from './assets/luiz-photo.png'
 
 export function About() {
   return (
@@ -43,7 +44,7 @@ export function About() {
                 <div className="relative">
                   <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-accent-blue shadow-2xl">
                     <ImageWithFallback
-                      src="https://avatars.githubusercontent.com/u/114538629?v=4"
+                      src={imagemTeste}
                       alt="Luiz Alexandre - Developer"
                       className="w-full h-full object-cover"
                     />

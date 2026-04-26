@@ -77,7 +77,7 @@ export function Hero() {
 
               <div className="flex gap-4">
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/luizalexandremartins" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="px-8 py-4 bg-accent-blue text-white font-medium uppercase tracking-wider hover:bg-primary-blue transition-colors duration-300 flex items-center gap-3"
@@ -86,7 +86,7 @@ export function Hero() {
                   LinkedIn
                 </a>
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/sheroques" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="px-8 py-4 border-2 border-accent-blue text-accent-blue font-medium uppercase tracking-wider hover:bg-accent-blue hover:text-white transition-all duration-300 flex items-center gap-3"

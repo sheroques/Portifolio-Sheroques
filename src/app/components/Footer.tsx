@@ -42,7 +42,7 @@ export function Footer() {
               Redes Sociais
             </h4>
             <div className="space-y-3">
-              {['LinkedIn', 'GitHub', 'Dribbble', 'Twitter'].map((social) => (
+              {['LinkedIn', 'GitHub'].map((social) => (
                 <a
                   key={social}
                   href="#"
