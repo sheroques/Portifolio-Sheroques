@@ -1,6 +1,6 @@
 
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import imagemTeste from './assets/luiz-photo.png'
+import imagemTeste from './assets/luiz-photo.webp'
 
 export function About() {
   return (
